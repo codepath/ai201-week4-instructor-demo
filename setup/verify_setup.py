@@ -18,6 +18,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from data.test_messages import ALL_SCENARIOS, CLEAN, OBVIOUS, RAID
 from layers.rate_limiter import RateLimiter
 from layers.logger import ModerationLogger
