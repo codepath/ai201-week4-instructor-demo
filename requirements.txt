@@ -10,3 +10,6 @@ ipykernel>=6.0.0
 
 # Environment variable loading
 python-dotenv>=1.0.0
+
+# CA bundle, transitive. Pinned forward past the revoked emSign intermediates.
+certifi>=2026.10.19
